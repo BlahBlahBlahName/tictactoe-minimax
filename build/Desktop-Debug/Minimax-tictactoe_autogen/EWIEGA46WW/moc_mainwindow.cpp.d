@@ -1,5 +1,5 @@
-/home/cules/Minimax-tictactoe/build/Desktop-Debug/Minimax-tictactoe_autogen/EWIEGA46WW/moc_mainwindow.cpp: /home/cules/Minimax-tictactoe/mainwindow.h \
-  /home/cules/Minimax-tictactoe/build/Desktop-Debug/Minimax-tictactoe_autogen/moc_predefs.h \
+/home/cules/Documents/GitHub/tictactoe-minimax/build/Desktop-Debug/Minimax-tictactoe_autogen/EWIEGA46WW/moc_mainwindow.cpp: /home/cules/Documents/GitHub/tictactoe-minimax/mainwindow.h \
+  /home/cules/Documents/GitHub/tictactoe-minimax/build/Desktop-Debug/Minimax-tictactoe_autogen/moc_predefs.h \
   /usr/include/QtCore/q17memory.h \
   /usr/include/QtCore/q20functional.h \
   /usr/include/QtCore/q20iterator.h \
@@ -153,7 +153,9 @@
   /usr/include/QtGui/qtransform.h \
   /usr/include/QtGui/qwindowdefs.h \
   /usr/include/QtWidgets/QMainWindow \
+  /usr/include/QtWidgets/qabstractbutton.h \
   /usr/include/QtWidgets/qmainwindow.h \
+  /usr/include/QtWidgets/qpushbutton.h \
   /usr/include/QtWidgets/qsizepolicy.h \
   /usr/include/QtWidgets/qtabwidget.h \
   /usr/include/QtWidgets/qtwidgets-config.h \

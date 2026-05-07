@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/cules/Minimax-tictactoe/build/Desktop-Debug"
+			"value" : "/home/cules/Documents/GitHub/tictactoe-minimax/build/Desktop-Debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -467,7 +467,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/cules/Minimax-tictactoe/build/Desktop-Debug/CMakeFiles/pkgRedirects"
+			"value" : "/home/cules/Documents/GitHub/tictactoe-minimax/build/Desktop-Debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -539,7 +539,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/cules/Minimax-tictactoe"
+			"value" : "/home/cules/Documents/GitHub/tictactoe-minimax"
 		},
 		{
 			"name" : "CMAKE_INSTALL_BINDIR",
@@ -1071,7 +1071,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/home/cules/Minimax-tictactoe/build/Desktop-Debug/.qtcreator/cmake-helper/qtcreator-project.cmake"
+			"value" : "/home/cules/Documents/GitHub/tictactoe-minimax/build/Desktop-Debug/.qtcreator/cmake-helper/qtcreator-project.cmake"
 		},
 		{
 			"name" : "CMAKE_PROJECT_NAME",
@@ -1499,7 +1499,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/cules/Minimax-tictactoe/build/Desktop-Debug"
+			"value" : "/home/cules/Documents/GitHub/tictactoe-minimax/build/Desktop-Debug"
 		},
 		{
 			"name" : "Minimax-tictactoe_IS_TOP_LEVEL",
@@ -1523,7 +1523,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/cules/Minimax-tictactoe"
+			"value" : "/home/cules/Documents/GitHub/tictactoe-minimax"
 		},
 		{
 			"name" : "OPENGL_EGL_INCLUDE_DIR",
@@ -1743,7 +1743,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/cules/Minimax-tictactoe/build/Desktop-Debug/.qtcreator/cmake-helper"
+			"value" : "/home/cules/Documents/GitHub/tictactoe-minimax/build/Desktop-Debug/.qtcreator/cmake-helper"
 		},
 		{
 			"name" : "QT_ADDITIONAL_HOST_PACKAGES_PREFIX_PATH",

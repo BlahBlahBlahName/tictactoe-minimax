@@ -2223,8 +2223,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/home/cules/Minimax-tictactoe/build/Desktop-Debug",
-		"source" : "/home/cules/Minimax-tictactoe"
+		"build" : "/home/cules/Documents/GitHub/tictactoe-minimax/build/Desktop-Debug",
+		"source" : "/home/cules/Documents/GitHub/tictactoe-minimax"
 	},
 	"version" : 
 	{

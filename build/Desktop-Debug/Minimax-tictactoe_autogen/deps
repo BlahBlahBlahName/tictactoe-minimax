@@ -1,14 +1,14 @@
 Minimax-tictactoe_autogen/timestamp: \
-	/home/cules/Minimax-tictactoe/CMakeLists.txt \
-	/home/cules/Minimax-tictactoe/build/Desktop-Debug/.qtcreator/cmake-helper/maintenance_tool_provider.cmake \
-	/home/cules/Minimax-tictactoe/build/Desktop-Debug/.qtcreator/cmake-helper/package-manager.cmake \
-	/home/cules/Minimax-tictactoe/build/Desktop-Debug/.qtcreator/cmake-helper/qtcreator-project.cmake \
-	/home/cules/Minimax-tictactoe/build/Desktop-Debug/CMakeFiles/4.2.3/CMakeCXXCompiler.cmake \
-	/home/cules/Minimax-tictactoe/build/Desktop-Debug/CMakeFiles/4.2.3/CMakeSystem.cmake \
-	/home/cules/Minimax-tictactoe/build/Desktop-Debug/Minimax-tictactoe_autogen/moc_predefs.h \
-	/home/cules/Minimax-tictactoe/main.cpp \
-	/home/cules/Minimax-tictactoe/mainwindow.cpp \
-	/home/cules/Minimax-tictactoe/mainwindow.h \
+	/home/cules/Documents/GitHub/tictactoe-minimax/CMakeLists.txt \
+	/home/cules/Documents/GitHub/tictactoe-minimax/build/Desktop-Debug/.qtcreator/cmake-helper/maintenance_tool_provider.cmake \
+	/home/cules/Documents/GitHub/tictactoe-minimax/build/Desktop-Debug/.qtcreator/cmake-helper/package-manager.cmake \
+	/home/cules/Documents/GitHub/tictactoe-minimax/build/Desktop-Debug/.qtcreator/cmake-helper/qtcreator-project.cmake \
+	/home/cules/Documents/GitHub/tictactoe-minimax/build/Desktop-Debug/CMakeFiles/4.2.3/CMakeCXXCompiler.cmake \
+	/home/cules/Documents/GitHub/tictactoe-minimax/build/Desktop-Debug/CMakeFiles/4.2.3/CMakeSystem.cmake \
+	/home/cules/Documents/GitHub/tictactoe-minimax/build/Desktop-Debug/Minimax-tictactoe_autogen/moc_predefs.h \
+	/home/cules/Documents/GitHub/tictactoe-minimax/main.cpp \
+	/home/cules/Documents/GitHub/tictactoe-minimax/mainwindow.cpp \
+	/home/cules/Documents/GitHub/tictactoe-minimax/mainwindow.h \
 	/usr/include/QtCore/q17memory.h \
 	/usr/include/QtCore/q20functional.h \
 	/usr/include/QtCore/q20iterator.h \
@@ -162,7 +162,9 @@ Minimax-tictactoe_autogen/timestamp: \
 	/usr/include/QtGui/qtransform.h \
 	/usr/include/QtGui/qwindowdefs.h \
 	/usr/include/QtWidgets/QMainWindow \
+	/usr/include/QtWidgets/qabstractbutton.h \
 	/usr/include/QtWidgets/qmainwindow.h \
+	/usr/include/QtWidgets/qpushbutton.h \
 	/usr/include/QtWidgets/qsizepolicy.h \
 	/usr/include/QtWidgets/qtabwidget.h \
 	/usr/include/QtWidgets/qtwidgets-config.h \

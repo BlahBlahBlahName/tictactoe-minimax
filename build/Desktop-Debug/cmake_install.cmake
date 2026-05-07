@@ -1,4 +1,4 @@
-# Install script for directory: /home/cules/Minimax-tictactoe
+# Install script for directory: /home/cules/Documents/GitHub/tictactoe-minimax
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -49,7 +49,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/Minimax-tictactoe"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/cules/Minimax-tictactoe/build/Desktop-Debug/Minimax-tictactoe")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/cules/Documents/GitHub/tictactoe-minimax/build/Desktop-Debug/Minimax-tictactoe")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/Minimax-tictactoe" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/Minimax-tictactoe")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -61,7 +61,7 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/cules/Minimax-tictactoe/build/Desktop-Debug/install_local_manifest.txt"
+  file(WRITE "/home/cules/Documents/GitHub/tictactoe-minimax/build/Desktop-Debug/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -77,6 +77,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/cules/Minimax-tictactoe/build/Desktop-Debug/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/home/cules/Documents/GitHub/tictactoe-minimax/build/Desktop-Debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

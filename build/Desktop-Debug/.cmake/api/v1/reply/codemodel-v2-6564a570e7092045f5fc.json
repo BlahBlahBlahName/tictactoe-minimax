@@ -881,7 +881,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Minimax-tictactoe::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Minimax-tictactoe-Debug-ba537fb67d4ba206d846.json",
+					"jsonFile" : "target-Minimax-tictactoe-Debug-e2a6d2d34dd168845b3d.json",
 					"name" : "Minimax-tictactoe",
 					"projectIndex" : 0
 				},
@@ -905,8 +905,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/cules/Minimax-tictactoe/build/Desktop-Debug",
-		"source" : "/home/cules/Minimax-tictactoe"
+		"build" : "/home/cules/Documents/GitHub/tictactoe-minimax/build/Desktop-Debug",
+		"source" : "/home/cules/Documents/GitHub/tictactoe-minimax"
 	},
 	"version" : 
 	{

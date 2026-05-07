@@ -308,7 +308,7 @@
 			[
 				{
 					"backtrace" : 0,
-					"path" : "/home/cules/Minimax-tictactoe/build/Desktop-Debug/Minimax-tictactoe_autogen/include"
+					"path" : "/home/cules/Documents/GitHub/tictactoe-minimax/build/Desktop-Debug/Minimax-tictactoe_autogen/include"
 				},
 				{
 					"backtrace" : 34,
@@ -352,11 +352,11 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "Minimax-tictactoe_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 0,
 			"id" : "Minimax-tictactoe_autogen::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "Minimax-tictactoe_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "Minimax-tictactoe::@6890427a1f51a3e7e1df",
@@ -432,11 +432,11 @@
 			"id" : "Qt6::uic::@6890427a1f51a3e7e1df"
 		},
 		{
-			"id" : "Minimax-tictactoe_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 0,
 			"id" : "Minimax-tictactoe_autogen::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "Minimax-tictactoe_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
 	"paths" : 

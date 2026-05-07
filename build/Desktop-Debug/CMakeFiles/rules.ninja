@@ -44,7 +44,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /usr/bin/cmake --regenerate-during-build -S/home/cules/Minimax-tictactoe -B/home/cules/Minimax-tictactoe/build/Desktop-Debug
+  command = /usr/bin/cmake --regenerate-during-build -S/home/cules/Documents/GitHub/tictactoe-minimax -B/home/cules/Documents/GitHub/tictactoe-minimax/build/Desktop-Debug
   description = Re-running CMake...
   generator = 1
 

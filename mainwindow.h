@@ -17,5 +17,9 @@ private:
     QPushButton* button[3][3];
     void updateUI();
     void makeAImove();
+    bool checkWinner();
+
+private slots:
+    void handlePlayerMove();
 };
 #endif // MAINWINDOW_H
