@@ -17,7 +17,7 @@ MainWindow::MainWindow(QWidget *parent)
             button[i][j] = new QPushButton("");
             button[i][j]->setFixedSize(60, 60);
             board[i][j] = ' ';
-            button[i][j]->setIcon(QIcon("Empty.png"));
+            button[i][j]->setIcon(QIcon(":/new/image/Empty.png"));
             button[i][j]->setIconSize(QSize(60, 60));
 
             hlayout->addWidget(button[i][j]);
@@ -37,7 +37,7 @@ void MainWindow::handlePlayerMove()
         for (int j = 0; j < 3; j++) {
             if (button[i][j] == clickedButton && board[i][j] == ' ') {
                 board[i][j] = 'X';
-                button[i][j]->setIcon(QIcon("PlayerCheck.png"));
+                button[i][j]->setIcon(QIcon(":/new/image/PlayerCheck.png"));
                 button[i][j]->setEnabled(false);
 
                 if (checkWinner() == 'X') {
@@ -150,7 +150,7 @@ void MainWindow::makeAImove()
 
     if (bestRow != -1) {
         board[bestRow][bestCol] = 'O';
-        button[bestRow][bestCol]->setIcon(QIcon("EnemyCheck.png"));
+        button[bestRow][bestCol]->setIcon(QIcon(":/new/image/EnemyCheck.png"));
         button[bestRow][bestCol]->setEnabled(false);
 
         if (checkWinner() == 'O') {
