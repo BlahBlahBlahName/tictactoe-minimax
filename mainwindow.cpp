@@ -18,11 +18,10 @@ MainWindow::MainWindow(QWidget *parent)
             button[i][j]->setFixedSize(60, 60);
             board[i][j] = ' ';
             button[i][j]->setIcon(QIcon("Empty.png"));
-            button[i][j]->setIconSize(QSize(60,60));    // Initialize internal board
+            button[i][j]->setIconSize(QSize(60, 60));
 
             hlayout->addWidget(button[i][j]);
             connect(button[i][j], &QPushButton::clicked, this, &MainWindow::handlePlayerMove);
-            // Connect the button to our slot
         }
         vlayout->addLayout(hlayout);
     }
@@ -33,46 +32,141 @@ void MainWindow::handlePlayerMove()
 {
     QPushButton* clickedButton = qobject_cast<QPushButton*>(sender());
     if (!clickedButton) return;
-    for(int i = 0; i <3; i++)
-    {
-        for(int j = 0; j < 3; j++)
-        {
-            if(button[i][j] == clickedButton && board[i][j] == ' ')
-            {
+
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            if (button[i][j] == clickedButton && board[i][j] == ' ') {
                 board[i][j] = 'X';
                 button[i][j]->setIcon(QIcon("PlayerCheck.png"));
-                if (checkWinner())
-                {
-                    QMessageBox::information(this, "Title", "You've won!");
+                button[i][j]->setEnabled(false);
+
+                if (checkWinner() == 'X') {
+                    QMessageBox::information(this, "Game Over", "You win!");
+                    disableAllButtons();
+                    return;
                 }
+                if (!isMovesLeft()) {
+                    QMessageBox::information(this, "Game Over", "It's a draw!");
+                    return;
+                }
+
+                makeAImove();
+                return;
             }
         }
     }
 }
 
-bool MainWindow::checkWinner()
+char MainWindow::checkWinner()
 {
-    for(int i = 0; i < 3; i++)
-    {
-        if(!(board[i][0] == ' ') && board[i][1] == board[i][0] && board[i][2] == board[i][0])
-        {
-            return true;
-        }
-        if(!(board[0][i] == ' ') && board[1][i] == board[0][i] && board[2][i] == board[0][i])
-        {
-            return true;
-        }
+    // Rows and columns
+    for (int i = 0; i < 3; i++) {
+        if (board[i][0] != ' ' && board[i][1] == board[i][0] && board[i][2] == board[i][0])
+            return board[i][0];
+        if (board[0][i] != ' ' && board[1][i] == board[0][i] && board[2][i] == board[0][i])
+            return board[0][i];
+    }
+    // Diagonals
+    if (board[0][0] != ' ' && board[1][1] == board[0][0] && board[2][2] == board[0][0])
+        return board[0][0];
+    if (board[0][2] != ' ' && board[1][1] == board[0][2] && board[2][0] == board[0][2])
+        return board[0][2];
 
-    }
-    if(!(board[0][0] == ' ') && board[1][1] == board[0][0] && board[2][2] == board[0][0])
-    {
-        return true;
-    }
-    if(!(board[0][2] == ' ') && board[1][1] == board[0][2] && board[2][0] == board[0][2])
-    {
-        return true;
-    }
+    return ' '; // No winner
+}
+
+int MainWindow::evaluate()
+{
+    char winner = checkWinner();
+    if (winner == 'O') return +10;
+    if (winner == 'X') return -10;
+    return 0;
+}
+
+bool MainWindow::isMovesLeft()
+{
+    for (int i = 0; i < 3; i++)
+        for (int j = 0; j < 3; j++)
+            if (board[i][j] == ' ') return true;
     return false;
+}
+
+int MainWindow::minimax(int depth, bool isMaximizing)
+{
+    int score = evaluate();
+
+    if (score == +10) return score - depth;
+    if (score == -10) return score + depth;
+    if (!isMovesLeft()) return 0;
+
+    if (isMaximizing) {
+        int best = -1000;
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                if (board[i][j] == ' ') {
+                    board[i][j] = 'O';
+                    best = std::max(best, minimax(depth + 1, false));
+                    board[i][j] = ' ';
+                }
+            }
+        }
+        return best;
+    } else {
+        int best = +1000;
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                if (board[i][j] == ' ') {
+                    board[i][j] = 'X';
+                    best = std::min(best, minimax(depth + 1, true));
+                    board[i][j] = ' ';
+                }
+            }
+        }
+        return best;
+    }
+}
+
+void MainWindow::makeAImove()
+{
+    int bestVal = -1000;
+    int bestRow = -1;
+    int bestCol = -1;
+
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            if (board[i][j] == ' ') {
+                board[i][j] = 'O';
+                int moveVal = minimax(0, false);
+                board[i][j] = ' ';
+
+                if (moveVal > bestVal) {
+                    bestRow = i;
+                    bestCol = j;
+                    bestVal = moveVal;
+                }
+            }
+        }
+    }
+
+    if (bestRow != -1) {
+        board[bestRow][bestCol] = 'O';
+        button[bestRow][bestCol]->setIcon(QIcon("EnemyCheck.png"));
+        button[bestRow][bestCol]->setEnabled(false);
+
+        if (checkWinner() == 'O') {
+            QMessageBox::information(this, "Game Over", "AI wins!");
+            disableAllButtons();
+        } else if (!isMovesLeft()) {
+            QMessageBox::information(this, "Game Over", "It's a draw!");
+        }
+    }
+}
+
+void MainWindow::disableAllButtons()
+{
+    for (int i = 0; i < 3; i++)
+        for (int j = 0; j < 3; j++)
+            button[i][j]->setEnabled(false);
 }
 
 MainWindow::~MainWindow() = default;

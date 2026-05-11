@@ -153,6 +153,7 @@
   /usr/include/QtGui/qtransform.h \
   /usr/include/QtGui/qwindowdefs.h \
   /usr/include/QtWidgets/QMainWindow \
+  /usr/include/QtWidgets/QPushButton \
   /usr/include/QtWidgets/qabstractbutton.h \
   /usr/include/QtWidgets/qmainwindow.h \
   /usr/include/QtWidgets/qpushbutton.h \
